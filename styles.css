@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.parallax-container {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+}
+
+.parallax {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed; /* Enable the parallax effect */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 50vh;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
