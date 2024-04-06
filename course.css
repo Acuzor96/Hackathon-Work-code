@@ -4,37 +4,44 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
 
-.parallax-container {
-    height: 70vh;
-    overflow-x: hidden;
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f5f5f5;
     overflow-y: auto;
-    perspective: 1px;
+    padding: 20px;
+    z-index: 1;
 }
 
-.parallax {
-    background-size: cover;
-    background-position: center;
-    height: 70vh; /* Increase height for a more dramatic parallax effect */
-    background-color: #272727; /* Dark background color */
-    background-attachment: fixed; /* Enable the parallax effect */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
 }
+
+.sidebar ul li {
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-left: 230px; /* Adjust as needed to accommodate the sidebar width */
+}
+
 
 .content {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding-top: 50vh;
+    padding-top: 0vh;
 }
 
 .grid {
-    display: grid;
+    
     gap: 20px;
     padding: 20px;
 }
@@ -50,7 +57,6 @@ header {
 
 .course-item {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
     position: relative;
@@ -68,8 +74,9 @@ header {
 }
 
 .image-container {
-    width: 100%;
-    height: 200px; /* Set initial height for the image container */
+    flex: 1;
+    max-width: 50%;
+    height: auto; /* Set initial height for the image container */
     overflow: hidden;
     position: relative;
 }
@@ -77,26 +84,37 @@ header {
 .image-container img {
     width: 100%;
     height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the image */
-    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    display: block;
+    transition: transform 0.3s ease; 
 }
-
-.course-item:hover .image-container img {
-    transform: translate(-50%, -60%); /* Move image upwards on hover */
+.more-details,
+.more-details2,
+.more-details3,
+.more-details4,
+.more-details5,
+.more-details6,
+.more-details7,
+.more-details8,
+.more-details9,
+.more-details10,
+.more-details11,
+.more-details12,
+.more-details13,
+.more-details14,
+.more-details15,
+.more-details16,
+.more-details17,
+.more-details18
+{
+    display: none;
 }
-
 .details {
+    flex:1;
     text-align: center;
     background-color: #fff;
     padding: 20px;
-    border-top: 1px solid #ccc;
-    box-sizing: border-box;
-    transition: height 0.3s ease; /* Add transition for smooth animation */
-    height: 0; /* Initially hide details */
-    overflow: hidden;
+
+    border-left: 1px solid #ccc;
 }
 
 .course-item:hover .details {
