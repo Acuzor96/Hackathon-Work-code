@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Colorful To-Do List Project</title>
+</head>
+<body>
+ 
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <div class="info-box">
+    <p>WHY TO MANAGE??? ''Each day is a treasure chest filled with limitless opportunities; take joy enjoying in checking many off your list''</p>
+  </div>
+  <div class="box" onclick="toggleMessages()">
+    Want some suggestions for your task ? 
+    <div class="messages">
+      <p>Message 1</p>
+      <p>Message 2</p>
+      <p>Message 3</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
