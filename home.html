@@ -14,8 +14,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <script>
+        function toggleChatBox() {
+            var box = document.getElementById("chat");
+            box.classList.toggle("hidden");
+        }
+            </script>
 </head>
 <body>
     <div class="nav">
@@ -25,7 +31,7 @@
         </div>
         <div class="right-links">
             <div class="dropdown"> 
-                <button class="dropbtn btn"><i class="fa-solid fa-bars"></i>  Explore Courses</button>
+                <button class="dropbtn"><i class="fa-solid fa-bars"></i>  Explore Courses</button>
                 
                 <div class="dropdown-content">             <!--This content will be hidden before hovering on explore courses -->
                     <div>
@@ -97,47 +103,116 @@
         </div>
     </main>
     <div class="parallax-container">
-        <div class="parallax" style="background-image: url(https://www.uottawa.ca/about-us/sites/g/files/bhrskd336/files/styles/max_width_l_1470px/public/2022-03/speech-generic-unsplash.jpg?itok=WtglPoXU);">
-        <div>
-            <p>"The future belongs to those who believe in</p> 
-            <p>beauty of their dreams."</p>
-            <i> - Eleanor Roosevelt</i>
+        <div class="parallax" style="background-image: url(courses_page/Image_of_mentor.jpg);">
         </div>
         </div>    
     </div>
-
-    <div style="display: flex;justify-content: center;font-size: larger;margin-top: 40px;font-size: x-large;">
-        <p>Best Courses Offered by MentorMitra :</p>
+    <button onclick="toggleChatBox()"><img src="https://e7.pngegg.com/pngimages/922/800/png-clipart-computer-icons-font-awesome-symbol-symbol-miscellaneous-online-chat.png" alt="chat" class="chat">   </button>
+    <section class="hero">
+        <h2>Welcome to our Virtual Mentorship Program</h2>
+        <p>Connect with experienced mentors and accelerate your personal and professional growth.</p>
+        <a style="gap: 6px; background-color: azure; border-radius: 0.5rem;width: 7rem; position: absolute; left:45.5%;top: 50.5rem;" href="#id2">Meet Mentors</a>
+    </section>
+<div id="courses">hi</div>
+<br>
+<br>
+<br>
+    <div class="flex justify-center heading">
+        <h2 class="flex justify-center">Our Courses</h2>
     </div>
-    <div class="card-container">
-        <div class="card">
-            <img src="https://img.freepik.com/premium-vector/anime-style-male-teacher_925122-1857.jpg?w=360">
-            <p>Arjun Sharma</p>
-        </div>
-        <div class="card">
-            <img src="https://pics.craiyon.com/2023-09-30/4e640ad18c3c414eb1ce170aec8df64b.webp">
-            <p>Priya Patel</p>
-        </div>
-        <div class="card">
-            <img src="https://img.freepik.com/premium-vector/anime-style-male-teacher_925122-1857.jpg?w=360">
-            <p>Aarav Gupta</p>
-        </div>
-        <div class="card">
-            <img src="https://pics.craiyon.com/2023-09-30/4e640ad18c3c414eb1ce170aec8df64b.webp">
-            <p>Ananya Singh</p>
-        </div>
-        <div class="card">
-            <img src="https://img.freepik.com/premium-vector/anime-style-male-teacher_925122-1857.jpg?w=360">
-            <p>Aditya Kumar</p>
-        </div>
-        <div class="card">
-            <img src="https://img.freepik.com/premium-vector/anime-style-male-teacher_925122-1857.jpg?w=360">
-            <p>Rohan Mishra</p>
-        </div>
+    
+<div class="courses flex space-even">
+    <div class="box"><img src="https://ananda.ai/wp-content/uploads/2021/12/vlog-44-1024x536.jpg" alt=""></div>
+    <div class="box"><img src="https://ananda.ai/wp-content/uploads/2021/12/vlog-44-1024x536.jpg" alt=""></div>
+    <div class="box"><img src="https://ananda.ai/wp-content/uploads/2021/12/vlog-44-1024x536.jpg" alt=""></div>
+    <div class="box"><img src="https://ananda.ai/wp-content/uploads/2021/12/vlog-44-1024x536.jpg" alt=""></div>
+</div>
+<div class="names">
+    <div class="tag">
+        <p>Psychology</p>
     </div>
+    <div class="tag">
+        <p>Data</p>
     </div>
-    <div class="chat-container">
+    <div class="tag">
+        <p>Business & Marketing</p>
+    </div>
+    <div class="tag">
+        <p>Share Market & Stocks</p>
+    </div>
+</div>
+<div class="after flex justify-center item-center"><button class="next-page flex justify-center "
+    onclick="window.location.href=`courses_page/courses.html`">View More</button>
+</div>
+<div id="id2">hi</div>
+<br>
+<div class="meet">
+    <p
+        style="color: white;font-size: 2.2rem;margin-left: 26%;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        Meet our most demanding "Mentors"</p>
+</div>
+    <div class="container">
+        <div  class="box">
+            <img src="https://pwonlyias.com/wp-content/uploads/2024/04/unnamed-29-660ea2c2457a1.webp" alt="">
+            <div class="info">
+                <h3>Daniel Kahneman</h3>
+                <p>Specialty: Psychology</p>
+                <p>Experience: 30+ years</p>
+            </div>            
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsicCwWjzt28QlbulVlUrjLtd5vNeOV-R0OxO8T2SOg&s" alt="">
+            <div class="info">
+                <h3>Anita Borg</h3>
+                <p>Specialty: Web Development</p>
+                <p>Experience: 10+ years</p>
+            </div>
+        </div>
+        <div id="id3" class="box">
+            <img src="https://www.kenan-flagler.unc.edu/wp-content/uploads/1970/01/Cropped_KristopherKeller_2.jpg" alt="">
+            <div class="info">
+                <h3>Kristopher Keller</h3>
+                <p>Specialty: Business & Marketing</p>
+                <p>Experience: 15+ years</p>
+            </div>
+        </div>
+        <div id="id4" class="box">
+            <img src="https://images.yourstory.com/cs/images/undefined/ManishGoelFounder-DirectorResearchRanking-1618217791593.png" alt="">
+            <div class="info">
+                <h3>Manish Goel</h3>
+                <p>Specialty: Share Market & Stocks</p>
+                <p>Experience: 15+ years</p>
+            </div>
+        </div>
+    </div><section class="features" id="features">
+        <h2 style="color: white;">Our Features</h2>
+        <div class="feature-box">
+            <h3>Expert Mentors</h3>
+            <p>Connect with industry experts and leaders in various fields.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Flexible Scheduling</h3>
+            <p>Schedule mentorship sessions at your convenience.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Personalized Guidance</h3>
+            <p>Receive personalized guidance tailored to your goals and aspirations.</p>
+        </div>
+    </section>
+    <section class="testimonials" id="feedbacks">
+        <h2>What Our Mentees Say</h2>
+        <div class="testimonial-box">
+            <p>"The mentorship program helped me gain valuable insights and guidance that propelled my career forward. Highly recommended!"</p>
+            <cite>- John Doe</cite>
+        </div>
+        <div class="testimonial-box">
+            <p>"I was amazed by the depth of knowledge and support provided by my mentor. It truly made a difference in my professional journey."</p>
+            <cite>- Jane Smith</cite>
+        </div>
+    </section>
+    <div class="chat-container" id="chat"><a onclick="toggleChatBox()"><i class="fa-solid fa-xmark close"></i></a>
         <div class="chat-box" id="chat-box">
+            
             <div class="chat-bot">Welcome! How can I assist you today?</div>
         </div>
         <input type="text" id="user-input" placeholder="Type your message...">
